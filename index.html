@@ -61,6 +61,156 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-SerDes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/15/SerDes/" class="article-date">
+  <time datetime="2017-10-15T04:52:28.000Z" itemprop="datePublished">2017-10-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/15/SerDes/">SerDes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>SerDes<br>왜 SerDes가 필요한가?</li>
+</ol>
+<ul>
+<li>IC의 집적도가 높아지면서 병렬 신호, 즉 pin의 개수, 가 하나의 IC에서 차지하는 면적이 크기 때문에 이를 줄일 수 있는 방법이 필요해졌기 때문.</li>
+<li>게다가 클럭 신호까지 함께 보내면 더욱 힘들어지게 된다. 따라서 초고속 통신에서는 클럭 신호를 따로 보내지 않는것이 안정적인 타이밍을 유지하는데도 도움이 된다. </li>
+</ul>
+<ol>
+<li>Transmitter</li>
+</ol>
+<ul>
+<li>parallel to serial</li>
+</ul>
+<ol>
+<li>Receiver</li>
+</ol>
+<ul>
+<li>serial to parallel</li>
+<li>Receiver에서는 Clock Data Recovery를 사용해 데이터와 클럭을 함께 추출한다.<br>-</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dynoh91.github.io/2017/10/15/SerDes/" data-id="cj8sa8cux0000r4ayiisi03im" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-lvds" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/15/lvds/" class="article-date">
+  <time datetime="2017-10-15T04:49:28.000Z" itemprop="datePublished">2017-10-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/15/lvds/">LVDS</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>LVDS </li>
+</ol>
+<ul>
+<li>Low Voltage Differential Signaling</li>
+<li>고속 디지털 인터페이스<br>-</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dynoh91.github.io/2017/10/15/lvds/" data-id="cj8sa8cw00004r4aynuj0oe1y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pcie" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/15/pcie/" class="article-date">
+  <time datetime="2017-10-15T03:55:28.000Z" itemprop="datePublished">2017-10-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/15/pcie/">PCI Express</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>PCIE</li>
+</ol>
+<ul>
+<li>고속 직렬 인터페이스</li>
+<li>2.5Gbps의 차동 신호를 사용한 point to point 프로토콜</li>
+<li>직렬 신호 송수신 하기위한 SerDes (Serializer and Deserializer) 가 포함됨 (analog block)</li>
+</ul>
+<ol>
+<li>클럭 구조</li>
+</ol>
+<ul>
+<li>분류 : 공통 모드, 분리모드, 임베디드 클록 모드</li>
+<li>기준 클럭 (Reference clock)은 100Mhz LVDS 신호 + 확산 스펙트럼 클럭 (Spread Spectrum Clock) 을 사용</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dynoh91.github.io/2017/10/15/pcie/" data-id="cj8sa8cvv0002r4aythzu4h1a" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/15/hello/" class="article-date">
@@ -88,7 +238,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dynoh91.github.io/2017/10/15/hello/" data-id="cj8s80v5f0001djay90mxgwri" class="article-share-link">Share</a>
+      <a data-url="https://dynoh91.github.io/2017/10/15/hello/" data-id="cj8sa8cvz0003r4ayf6foig9s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dynoh91.github.io/2017/10/15/hello-world/" data-id="cj8s80v570000djayxi886xbk" class="article-share-link">Share</a>
+      <a data-url="https://dynoh91.github.io/2017/10/15/hello-world/" data-id="cj8sa8cvm0001r4aylun4bgg0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -171,6 +321,18 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/15/SerDes/">SerDes</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/15/lvds/">LVDS</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/15/pcie/">PCI Express</a>
+          </li>
         
           <li>
             <a href="/2017/10/15/hello/">안녕하세요</a>
